@@ -41,16 +41,8 @@ const clientSideID = '';
 // Set flagKey to the feature flag key you want to evaluate
 const flagKey = 'my-boolean-flag';
 ```
-10. In the render function beginning on line 37, you can have some fun editing what will show up. For instance, you can edit the text by altering line 37:
+10. In the render function beginning on line 37, you can have some fun editing what will show up. You can also add gifs in this function as well. In this example, I have the cat vibing gif show up to users who see the true variant, and the Homer Simpson "nothing to see here" gif show up for users who are seeing the false variant.
+11. Open `index.html` in your browser.
+12. Turn the flag on from the LaunchDarkly UI.
 
-```
-const label = 'Feature flag ' + flagKey + ' is ' + flagValue + ' for this user';
-```
-11. You can also add gifs in this function as well.
-
-12. Open `index.html` in your browser.
-13. Turn the flag on from the LaunchDarkly UI.
-
-You should see the message in line 37 (and any other gifs or fun stuff you added) in the browser!
-
-
+You should see the gifs (or any other fun stuff you added) in the browser!
